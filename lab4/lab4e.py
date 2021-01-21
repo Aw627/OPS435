@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+# Author ID: hcawong
+
+def is_digits(sobj):
+
+    for a in sobj:
+        if a in '0123456789':
+            pass
+        else:
+            return False
+    return True 
+ 
+if __name__ == '__main__':
+    test_list = ['x3058','3058','8503x','8503']
+    for item in test_list:
+        if is_digits(item):
+            print(item,'is an integer.')
+        else:
+            print(item,'is not an integer.')
